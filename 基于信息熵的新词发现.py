@@ -4,7 +4,7 @@ import numpy as np
 import jieba
 class GET_worddics():
     """
-    生成格式为‘词：【词频，左边界字分布，右边界字分布】’
+    生成格式字典 词：【词频，左边界字分布，右边界字分布】’
     """
     def __init__(self,bookID):
         self.conn = pymysql.connect(host='localhost', user='****', passwd='******', db='novels', charset='utf8')
